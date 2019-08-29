@@ -6,6 +6,9 @@ package com.cooksys.ftd.assignments.collections.hierarchy;
  * @param <Parent> parent element type
  */
 public interface Hierarchical<Element extends Hierarchical<Element, Parent>, Parent extends Element> {
+	// Two generic elements: Element and Parent
+	// Element has to be Hierarchical<Element, Parent>
+	// Parent has to be an Element
 
     /**
      * @return true if this element has a parent, or false otherwise
